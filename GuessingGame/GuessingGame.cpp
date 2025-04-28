@@ -51,7 +51,9 @@ int main()
 	// Run guessing loop with 3 tries
 	for (int i = 0; i < 3; i++)
 	{
+		// Print the question and save the number guessed
 		int numberGuessed = printQuestion();
+		// Check the guess
 		if (checkGuess(randomNumberToGuess, numberGuessed))
 		{
 			break;
